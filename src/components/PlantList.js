@@ -9,6 +9,7 @@ function PlantList() {
     key={plant.id}
     id={plant.id}
     image={plant.image}
+    name={plant.name}
     
   )
   );
