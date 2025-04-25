@@ -8,7 +8,7 @@ function PlantPage() {
     <main>
       <NewPlantForm plants={plants} setplants={setplants}/>
       <Search search={search} setSearch{setSearch}/>
-      <PlantList />
+      <PlantList plants={plants} />
     </main>
   );
 }
