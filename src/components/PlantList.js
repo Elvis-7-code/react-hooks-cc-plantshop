@@ -3,16 +3,18 @@ import PlantCard from "./PlantCard";
 
 function PlantList() {
   return (
-    <ul className="cards">{/* render PlantCards components in here */}</ul>
-    plants.map((plant)=>
-    <PlantCard
-    key={plant.id}
-    id={plant.id}
-    image={plant.image}
-    name={plant.name}
-    price={plant.price}
-    
-  )
+    <ul className="cards">
+      {/* render PlantCards components in here */}
+      {plants.map((plant) => (
+        <PlantCard
+          key={plant.id}
+          id={plant.id}
+          image={plant.image}
+          name={plant.name}
+          price={plant.price}
+        />
+      ))}
+    </ul>
   );
 }
 
