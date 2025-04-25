@@ -8,6 +8,7 @@ function PlantList() {
     <PlantCard
     key={plant.id}
     id={plant.id}
+    image={plant.image}
     
   )
   );
